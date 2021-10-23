@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Cart-Pemesanan</title>
+</head>
+<body style="margin-left: 350px;">
+    <div>
+        <nav style="background-color: gray; display: flex; width: 700px; height: 55px; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+            <ul style="list-style-type: none;">
+                <li>
+                    <img src="images/icons8-rectangle-24.png" alt="" style="width: 15px; height: 18px; vertical-align: -4px;"/>
+                    <b>Site Name</b>
+                </li>
+            </ul>
+            <ul style="list-style-type: none;">
+                <li>
+                    <a href="">Category 1</a> |
+                    <a href="">Category 2</a> |
+                    <a href="">Category 3</a>
+                </li>
+            </ul>
+            <ul style="list-style-type: none; margin-left: 130px;">
+                <li style="display: flex; padding-bottom: 20px;">
+                    <img src="images/icons8-search-50.png" alt="" style="width: 18px;"/>
+                    <img src="images/icons8-shopping-cart-24.png" alt="" style="width: 18px;"/>Cart (1)
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div style="width: 700px; height: 600px; border: 1px solid black; display: flex;">
+        <div style="width: 60%; padding-left: 20px; padding-top: 50px; padding-right: 30px;">
+            <b style="font-size: 20px;">Your Chart</b>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead style="border-top: 1px solid black; border-bottom: 1px solid black; padding-top: 70px;">
+                    <tr>
+                        <td>Item</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: flex; align-content: center; padding-bottom: 20px; padding-top: 20px;">
+                            <img src="images/tshirt.png" alt="" style="width: 100px;">
+                            <p>T-shirt<br>
+                                Size: Small</p>
+                        </td>
+                        <td>
+                            <b>$20.00</b>
+                        </td>
+                        <td>
+                            <select name="1" id="1">
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: end; border-top: 1px solid black; border-bottom: 1px solid black;">Subtotal: <b>$20.00</b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <aside style="float: right; width: 215px; height: 190px; margin-top: 40px; background-color: rgb(189, 185, 185);">
+             <table style="padding-left: 12px; padding-top: 10px;">
+                <tr>
+                    <th>Summary (1 items)</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td style="float: right;">-</td>
+                </tr>
+                <tr>
+                    <td>Est. Taxes</td>
+                    <td style="float: right;">-</td>
+                </tr>
+            </table>
+            <hr style="width: 80%; color: white;">
+            <table style="padding-left: 12px; padding-top: 10px;">
+                <tr>
+                    <td style="padding-right: 95px;">Total</td>
+                    <td style="padding-left: 5px;">$20.00</td>
+                </tr> 
+            </table>
+            <button type="submit" onclick="window.location.href='Checkout.html'" style="cursor: pointer; margin-left: 16px; padding: 2px 60px 2px 60px; color: white; background-color: blue;">Checkout</button>
+        </aside>
+    </div>
+    <div>
+        <footer style="font-size: 14px; align-content: center; justify-content: center;  width: 700px; height: 80px; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;">
+            <div style="display: flex; padding-left: 20px;">
+                <b style="padding-right: 15px; padding-top: 14px;">Site Name</b>
+                <p style="padding-right: 5px;"><a href="">Category X</a></p>
+                <p style="padding-right: 5px;">|</p>
+                <p style="padding-right: 5px;"><a href="">Category Y</a></p>
+                <p style="padding-right: 5px;">|</p>
+                <p style="padding-right: 5px;"><a href="">Category Z</a></p>
+                <a style="padding-left: 165px; padding-top: 20px;">Stay in Touch! Join Our Newsletter</a>
+            </div>
+            <div style="float: right; margin-bottom: 5px; margin-right: 15px;color: white; background-color: rgb(104, 104, 104); cursor: pointer;">
+               <input type="text" placeholder="Enter Email">Subscribe 
+            </div>
+            <div style="padding-left: 20px;">
+                <img src="images/icons8-visa-30.png" alt="" style="width: 26px;">
+                <img src="images/icons8-mastercard-50.png" alt="" style="width: 25px;">
+                <img src="images/icons8-credit-card-24.png" alt="" style="width: 24px;">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Form Pemesanan</title>
+</head>
+<body>
+    <header style="margin-left: 15%; width: 900px; height: 60px; background-color: gray; border: 1px solid black;">
+        <b style="margin-left: 400px; font-size: 15px;">A Web Page</b>
+        <div style="padding-left: 10px;">
+            <img src="images/icons8-arrow-pointing-left-32.png" alt="">
+            <img src="images/icons8-arrow-32.png" alt="">
+            <img src="images/icons8-x-48.png" alt="" style="width: 23px; vertical-align: 4px;">
+            <img src="images/icons8-home-24.png" alt="" style="vertical-align: 4px;">
+            <input type="text" style="width: 650px; vertical-align: 10px;" placeholder="https://">
+            <input type="text" style="width: 80px; vertical-align: 10px;" placeholder="Search...">
+        </div>
+    </header>
+    <div style="margin-left: 15%; width: 900px; border: 1px solid black;">
+        <nav style=" width: 800px; height: 20px; border: 1px solid black; margin-top: 15px; margin-left: 50px;">
+            <a href="#" style="padding-right: 35px; padding-left: 50px;">Home</a>|
+            <a href="#" style="padding-left: 45px; padding-right: 45px;">Generate Link</a>|
+            <a href="#" style="padding-right: 45px; padding-left: 45px;">Transaction History</a>|
+            <a href="#" style="padding-right: 45px; padding-left: 45px;">Policy</a>|
+            <a href="#" style="padding-left: 35px;">Logout</a>
+        </nav>
+        <div style="display: flex;">
+            <div style="margin-top: 5px;">
+                <aside style="width: 200px; height: 200px; display: grid;">
+                    <img src="images/icons8-x-coordinate-80.png" alt="" style="width: 150px; margin-left: 30px;">
+                    <input type="file" name="UploadFile" style="padding-left: 50px;">
+                </aside>
+            </div>
+        <form action="pemesanan.php">
+            <div style="margin-top: 20px;">
+                <table>
+                    <tr>
+                        <td>Title Here:</td>
+                        <td><Input type="text" placeholder="MacBook Air E800" style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Description:</td>
+                        <td><Input type="text" placeholder="Year, Model, Condition" style="text-align: start; width: 250px; height: 90px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Account Number:</td>
+                        <td><Input type="text" placeholder="123-456-789-0" style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Bank:</td>
+                        <td>
+                            <label for="bank" ></label>
+                            <select id="bank">
+                                <option value="HSBC" style="width: 200px;">HSBC</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Account Holder:</td>
+                        <td><Input type="text" placeholder="Name Here" style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Transaction:</td>
+                        <td><Input type="number" min="1" max="10" style="width: 40px;"><br>     
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            *if the transaction is for 3 person, choose 3 from the drop-down list<br>
+                            <input type="checkbox" id="phone" name="phone" checked>
+                            <label for="phone" style="color: green;">Send to Mobile Phone</label><br>
+                            <input type="checkbox" id="email" name="email" checked>
+                            <label for="email" style="color: green;">Send to Email</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Send to Mobile Phone:</td>
+                        <td><Input type="text" placeholder="1234567890, 1234567891" style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Send to Email:</td>
+                        <td><Input type="email" placeholder="someone@email.com" style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" style="cursor: pointer;margin-top: 20px; padding: 2px 30px 2px 30px; color: white; background-color: rgb(16, 138, 0);">Generate Nabr Link</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
